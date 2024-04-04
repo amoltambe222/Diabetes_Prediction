@@ -25,8 +25,8 @@ def predict():
 
         output = get_predict(preg,glucose,bp,st,insulin,bmi,dpf,age)
         
-        # return render_template('result.html', prediction=output)
-        return jsonify({"Message":f"{output}"})
+        return render_template('result.html', prediction=output)
+        # return jsonify({"Message":f"{output}"})
     else:
         return jsonify({"Message":"Not successfull"})
 if __name__ == "__main__":
