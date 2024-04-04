@@ -23,5 +23,5 @@ def get_predict(*args):
         report = "The patient is diabetic"
     else:
         report = "The patient is not diabetic"
-    # return result[0]
-    return report
+    return result[0]
+    # return report
